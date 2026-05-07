@@ -18,6 +18,7 @@
      commands:
       - echo docker image push to ECR `date`
       - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - echo taging
       - docker push $REPOSITORY_URI:$IMAGE_ID
       - echo writing ecs task definationfile
       - printf '[{"name":"container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json  # ECS needs this!
