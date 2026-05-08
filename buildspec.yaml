@@ -21,6 +21,7 @@ phases:
       - echo docker image push to ECR `date`
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo pushing latest tag
+      - push to the ecr with latest tag
       - docker push $REPOSITORY_URI:latest
       - echo writing ecs task definition file
       - printf '[{"name":"container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
