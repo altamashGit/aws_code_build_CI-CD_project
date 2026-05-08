@@ -16,6 +16,13 @@ This project demonstrates a robust, automated **CI/CD pipeline** that streamline
 | **Build Tool** | AWS CodeBuild |
 | **Orchestration** | Amazon ECS (Elastic Container Service) |
 | **Compute** | AWS Fargate (Serverless) |
+| **CI/CD Pipeline** | AWS CodePipeline |
+| **Artifact Storage** | Amazon S3 (Pipeline Artifacts) |
+| **Logging & Monitoring** | Amazon CloudWatch (Container & Build Logs) |
+| **Load Balancing** | AWS ALB (Application Load Balancer) |
+| **SSL/TLS Security** | AWS ACM (Certificate Manager - HTTPS) |
+| **Domain Mapping** | Amazon Route 53 (DNS Management) |
+| **Access Management** | AWS IAM (Roles for Least Privilege Access) |
 
 ---
 ## Architecture Diagram
